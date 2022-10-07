@@ -13,17 +13,21 @@
     "eject": "react-native-scripts eject",
     "android": "react-native-scripts android",
     "ios": "react-native-scripts ios",
-    "test": "node node_modules/jest/bin/jest.js --watch"
+    "test": "node node_modules/jest/bin/jest.js --watch",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "jest": {
     "preset": "jest-expo"
   },
   "dependencies": {
-    "expo": "^21.0.0",
-    "prop-types": "^15.6.0",
-    "react": "16.0.0-alpha.12",
-    "react-native": "^0.48.4",
+    "expo": "^28.0.0",
+    "prop-types": "^15.6.2",
+    "react": "16.5.0",
+    "react-native": "^0.64.0",
     "react-native-thumbnail-video": "^0.0.1",
-    "url-polyfill": "^1.0.8"
-  }
+    "url-polyfill": "^1.0.8",
+    "@snyk/protect": "latest"
+  },
+  "snyk": true
 }
